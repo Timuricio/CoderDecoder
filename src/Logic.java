@@ -2,10 +2,8 @@
  * Created by Иван on 08.07.2016.
  */
 public class Logic {
-    //private String msg;
-    //private String key;
-    private int keyz;
 
+    private int keyz;
 
 
     public Message CoderDecoder(Message msg, Key key) {
