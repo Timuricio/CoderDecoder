@@ -1,7 +1,7 @@
 /**
  * Created by Иван on 08.07.2016.
  */
-public class Test {
+public class Test { // Тестовый модуль 17.082
     public static void main(String[] args) {
 
         Logic L = new Logic();

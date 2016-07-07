@@ -3,10 +3,10 @@
  */
 public class Logic {
 
-    private int keyz;
+    private int keyz; // переменная которая просто нужна
 
 
-    public Message CoderDecoder(Message msg, Key key) {
+    public Message CoderDecoder(Message msg, Key key) { // Метод принимает сообщение и ключ с помощью которого вовращает уже зашифрованное сообщение
 
         Message remsg = new Message();
 
