@@ -7,8 +7,8 @@ import java.awt.*;
 public class CoderDecoderFrame extends JFrame
 {
     JTextField keyWord;
-    JTextField inputText;
-    JTextField outputText;
+    JTextArea inputText;
+    JTextArea outputText;
     JButton codeButton;
     JButton decodeButton;
 
@@ -42,21 +42,23 @@ public class CoderDecoderFrame extends JFrame
         getContentPane().add(keyWord,c);
 
         c.weighty = 1;
-        inputText = new JTextField("Enter the mesage");
+        inputText = new JTextArea("Enter the mesage");
         inputText.setEditable(true);
+        inputText.setLineWrap(true);
         c.gridx = 0;
         c.gridy = 1;
         c.gridwidth = 1;
 
         getContentPane().add(inputText,c);
 
-        inputText = new JTextField("Result");
-        inputText.setEditable(false);
+        outputText = new JTextArea("Result");
+        outputText.setEditable(false);
+        outputText.setLineWrap(true);
         c.gridx = 1;
         c.gridy = 1;
         c.gridwidth = 1;
 
-        getContentPane().add(inputText,c);
+        getContentPane().add(outputText,c);
 
         c.weighty = 0;
         codeButton = new JButton("Coder");
