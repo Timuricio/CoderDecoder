@@ -11,6 +11,7 @@ public class Main
         CoderDecoderFrame frame = new CoderDecoderFrame();
         Logic logic = new Logic();
 
+
         frame.codeButton.addActionListener(new ActionListener()
         {
             @Override
@@ -35,6 +36,15 @@ public class Main
                 String key = frame.keyWord.getText();
                 String result = logic.CoderDecoder(new Message(text),new Key(key)).getmsg();
                 frame.outputText.setText(result);
+            }
+        });
+
+        frame.copyButton.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                frame.inputText.setText(frame.outputText.getText());
             }
         });
     }

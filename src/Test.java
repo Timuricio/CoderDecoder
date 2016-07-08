@@ -6,8 +6,8 @@ public class Test { // Тестовый модуль 17.082
 
         Logic L = new Logic();
 
-        Message msg = new Message("This is a test");
-        Key key = new Key("qwertyui");
+        Message msg = new Message("Бармен носит блестящий костюм, а сны делают из мертвых колдунов.");
+        Key key = new Key("Ромашка");
 
         System.out.print("Исходное сообщение: ");
         System.out.println(msg.getmsg());
