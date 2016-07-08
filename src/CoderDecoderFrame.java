@@ -46,6 +46,7 @@ public class CoderDecoderFrame extends JFrame
         inputText = new JTextArea("Enter the mesage");
         inputText.setEditable(true);
         inputText.setLineWrap(true);
+        inputText.setWrapStyleWord(true);
         c.gridx = 0;
         c.gridy = 1;
         c.gridwidth = 3;
@@ -55,6 +56,7 @@ public class CoderDecoderFrame extends JFrame
         outputText = new JTextArea("Result");
         outputText.setEditable(false);
         outputText.setLineWrap(true);
+        outputText.setWrapStyleWord(true);
         c.gridx = 3;
         c.gridy = 1;
         c.gridwidth = 3;
